@@ -1,0 +1,2 @@
+# TRUSTICKET-RESOURCES
+Resources API
