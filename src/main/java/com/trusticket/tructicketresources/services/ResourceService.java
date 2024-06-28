@@ -42,8 +42,7 @@ public class ResourceService {
         }
 
 
-        // 파일의 절대 경로 반환
-        return destinationPath.toString();
+        return newFileName;
     }
 
     private String generateUniqueFileName(String originalFileName) {
