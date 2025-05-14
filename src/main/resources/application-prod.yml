@@ -1,7 +1,7 @@
 spring:
   application:
     name: trusticket-resources
-  resources-dir: storage/upload
+  resources-dir: ${SPRING_RESOURCES_DIR}
   cloud:
     discovery:
       enabled: false
@@ -33,15 +33,5 @@ error:
   printStackTrace: true # Stack trace ?? ??
   printStackTraceLine: 10 # Stack trace ?? ? ?
 
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
-
 server:
-  port: 8084
+  port: 8080
